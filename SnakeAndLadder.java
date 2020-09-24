@@ -8,7 +8,7 @@ public class SnakeAndLadder {
 		
 		int playerScore=0;
 		System.out.println("The initial player score is set to "+ playerScore);
-
+		
 	}
 
 }

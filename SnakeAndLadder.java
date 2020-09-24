@@ -13,9 +13,15 @@ public class SnakeAndLadder {
 		int playerScore=0;
 		System.out.println("The initial player score is set to "+ playerScore);
 		
+		System.out.println("No of rolls \t Player Position");
+		int no_of_rolls=0;
+		
 		while(playerScore<100) {
+			
 			//Rolling the die
 			int score = ran.nextInt(6) + 1;
+			no_of_rolls++;
+			System.out.println("\t"+no_of_rolls+"\t\t"+playerScore);
 			if(playerScore + score >100)
 				continue;
 			
@@ -37,7 +43,7 @@ public class SnakeAndLadder {
 			}
 		}	
 		
-		System.out.println("The player has won after reaching "+ playerScore+ " position");
+		System.out.println("The player has won after reaching "+ playerScore+ " position after "+ (no_of_rolls+1)+ " rolls");
 		
 	}
 

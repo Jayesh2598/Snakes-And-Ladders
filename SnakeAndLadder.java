@@ -15,7 +15,9 @@ public class SnakeAndLadder {
 		
 		while(playerScore<100) {
 			//Rolling the die
-			int score = ran.nextInt(6) + 1;;
+			int score = ran.nextInt(6) + 1;
+			if(playerScore + score >100)
+				continue;
 			
 			//Selecting the option
 			int option = ran.nextInt(3);
